@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI TẬP JS BUỔI 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="ex1">
+        <div class="container">
+            <h3>Bài 1: Sắp xếp 3 số</h3>
+            <div class="input-group mb-3 d-flex">
+                <input type="number" class="form-control mr-3" placeholder="Nhập số thứ nhất" id="number1">
+                <input type="number" class="form-control mr-3" placeholder="Nhập số thứ hai" id="number2">
+                <input type="number" class="form-control" placeholder="Nhập số thứ ba" id="number3">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnSapXep">Sắp xếp</button>
+            <input type="text" class="form-control pt-3 pb-3 mt-3" placeholder="" id="txtResult">
+        </div>
+    </section>
+    <section class="ex2">
+        <div class="container mt-3">
+            <h3>Bài 2: My family</h3>
+                <h4>Ai đang sử dụng máy?</h4>
+                <ul>
+					<li class="type">
+						<input type="radio" name="selector" id="father">
+						<label for="father">Bố</label>
+						<div class="check"></div>
+					</li>
+
+					<li class="type">
+						<input type="radio" name="selector" id="mother">
+						<label for="mother">Mẹ</label>
+						<div class="check"></div>
+					</li>
+
+					<li class="type">
+						<input type="radio" name="selector" id="brother">
+						<label for="brother">Anh</label>
+						<div class="check"></div>
+					</li>
+                    <li class="type">
+						<input type="radio" name="selector" id="sister">
+						<label for="sister">Chị</label>
+						<div class="check"></div>
+					</li>
+				</ul>
+                <button type="button" class="btn btn-primary" id="get">OK</button>
+                <input type="text" class="form-control pt-3 pb-3 mt-3 w-50" placeholder="" id="txtGreeting">
+        </div>
+    </section>
+    <section class="ex3 mt-3">
+        <div class="container">
+            <h3>Bài 3: Tìm số số lẻ/chẵn</h3>
+            <div class="input-group mb-3 d-flex">
+                <input type="number" class="form-control mr-3" placeholder="Nhập số thứ nhất" id="num1">
+                <input type="number" class="form-control mr-3" placeholder="Nhập số thứ hai" id="num2">
+                <input type="number" class="form-control mr-3" placeholder="Nhập số thứ ba" id="num3">
+            </div>
+            <button type="button" class="btn btn-primary" id="getResult">Đếm</button>
+            <div id="find"></div>
+        </div>
+    </section>
+    <section class="ex4 mt-3">
+        <div class="container">
+            <h3>Bài 4: Tìm loại tam giác</h3>
+            <div class="input-group mb-3 d-flex">
+                <input type="number" class="form-control mr-3" placeholder="Nhập cạnh thứ nhất" id="canh1">
+                <input type="number" class="form-control mr-3" placeholder="Nhập cạnh thứ hai" id="canh2">
+                <input type="number" class="form-control" placeholder="Nhập cạnh thứ ba" id="canh3">
+            </div>
+            <button type="button" class="btn btn-primary" id="duDoan">Dự đoán</button>
+            <div class="ketQuaDuDoan" id="ketQuaDuDoan"></div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/ex1.js"></script>
+    <script src="./js/ex2.js"></script>
+    <script src="./js/ex3.js"></script>
+    <script src="./js/ex4.js"></script>
+</body>
+
+</html>
